@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Inmueble HABI - Dirección Usuario</title>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/habi_front/css/style.css" />
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    </head>
+    <body>
+        <div id="navContent"></div>
+        <div class="container">
+            <div class="containerProgress60"> 
+              <div class="progress">60%</div> 
+            </div> 
+            <form id="myform" method="post">
+              <h1>Paso 3 de 5 - Dirección Usuario</h1>
+              <h3>Ingrese su dirección</h3>
+              <input type="text" id="address" name="address" placeholder="Ingrese su dirección" required/>
+            </form>
+            <div class="container_butttons">
+              <a onclick="guardar()"><button class="button">CONTINUAR</button></a>
+              <a href="/habi_front/index.html"><button class="button_secundary">REGRESAR</button></a>
+            </div>
+        </div>
+        <script src="./address.js"></script>
+    </body>
+</html>

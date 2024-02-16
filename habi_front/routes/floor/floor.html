@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Inmueble HABI - Piso Usuario</title>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/habi_front/css/style.css" />
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    </head>
+    <body>
+        <div id="navContent"></div>
+        <div class="container">
+            <div class="containerProgress80"> 
+              <div class="progress">80%</div> 
+            </div> 
+            <form id="myform" method="post">
+              <h1>Paso 4 de 5 - Piso Usuario</h1>
+              <h3>Ingrese su piso</h3>
+              <input type="number" id="floor" name="floor" min="1" max="50" placeholder="Ingrese su piso" required/>
+            </form>
+            <div class="container_butttons">
+              <a onclick="guardar()"><button class="button">CONTINUAR</button></a>
+              <a href="/habi_front/index.html"><button class="button_secundary">REGRESAR</button></a>
+          </div>
+        </div>
+        <script src="./floor.js"></script>
+    </body>
+</html>

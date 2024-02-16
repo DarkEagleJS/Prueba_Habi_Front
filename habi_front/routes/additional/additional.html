@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Inmueble HABI - Adicionales Usuario</title>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/habi_front/css/style.css" />
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    </head>
+    <body>
+        <div id="navContent"></div>
+        <div class="container">
+            <div class="containerProgress100"> 
+              <div class="progress">100%</div> 
+            </div> 
+            <form id="myform" method="post">
+              <h1>Paso 5 de 5 - Adicionales Usuario</h1>
+              <h3>Seleccione los adicionales</h3>
+              <input class="checkbox" type="checkbox" id="checkbox1" value="BBQ" />
+              <label for="cbox1">BBQ</label>
+              <input class="checkbox" type="checkbox" id="checkbox2" value="Salón Comunal" />
+              <label for="cbox1">Salon Comunal</label>
+              <input class="checkbox" type="checkbox" id="checkbox3" value="Parque de Juegos" />
+              <label for="cbox1">Parque de Juegos</label>
+            </form>
+            <div class="container_butttons">
+              <a onclick="cargar()"><button class="button">FINALIZAR</button></a>
+              <a href="/habi_front/index.html"><button class="button_secundary">REGRESAR</button></a>
+            </div>
+            <div id="modal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1 class="h1_modal">Por favor valida que la información que ingresaste es la correcta.</h1>
+                <h3 class="h3_modal">Regresa si la información no coincide y llama al Administrador</h3>
+                <div id="modal_data" class="modal_data">
+                </div>
+                <div class="modal_buttons">
+                  <a onclick="guardar()" ><button class="button">CONTINUAR</button></a>
+                  <a href="/habi_front/index.html"><button class="button_secundary">REGRESAR</button></a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <script src="./additional.js"></script>
+    </body>
+</html>
